@@ -1,38 +1,89 @@
-# NLP-Automatic-Ticket-Classification-Project
-Problem statement
+**Complaint Classification using NLP**
 
-For a financial company, customer complaints carry a lot of importance, as they are often an indicator of the shortcomings in their products and services. If these complaints are resolved efficiently in time, they can bring down customer dissatisfaction to a minimum and retain them with stronger loyalty. This also gives them an idea of how to continuously improve their services to attract more customers. 
+Overview
 
- 
+This project focuses on building a Natural Language Processing (NLP) pipeline to automatically classify customer financial complaints into predefined service categories. The solution leverages machine learning techniques to process unstructured text data and assign each complaint to the appropriate business segment.
 
-These customer complaints are unstructured text data; so, traditionally, companies need to allocate the task of evaluating and assigning each ticket to the relevant department to multiple support employees. This becomes tedious as the company grows and has a large customer base.
+Automating complaint categorization enables faster resolution workflows, improved analytics, and better customer experience management.
 
- 
+**Problem Statement**
 
-In this case study, you will be working as an NLP engineer for a financial company that wants to automate its customer support tickets system. As a financial company, the firm has many products and services such as credit cards, banking and mortgages/loans. 
+Financial institutions receive large volumes of customer complaints in free-text format. Manually reviewing and categorizing these complaints is time-consuming and inefficient.
 
- 
+This project develops a text classification system capable of categorizing complaints into the following service areas:
 
-Business goal
+Credit Card / Prepaid Card
 
-You need to build a model that is able to classify customer complaints based on the products/services. By doing so, you can segregate these tickets into their relevant categories and, therefore, help in the quick resolution of the issue.
+Bank Account Services
 
- 
+Theft / Dispute Reporting
 
-With the help of non-negative matrix factorization (NMF), an approach under topic modelling, you will detect patterns and recurring words present in each ticket. This can be then used to understand the important features for each cluster of categories. By segregating the clusters, you will be able to identify the topics of the customer complaints. 
+Mortgages / Loans
 
- 
+Others
 
-You will be doing topic modelling on the .json data provided by the company. Since this data is not labelled, you need to apply NMF to analyse patterns and classify tickets into the following five clusters based on their products/services:
+**Solution Approach**
 
-    Credit card / Prepaid card
+The project follows a structured NLP pipeline:
 
-    Bank account services
+**1. Data Preprocessing**
 
-    Theft/Dispute reporting
+Cleaning
 
-    Mortgages/loans
+Tokenization and normalization
 
-    Others 
+Stopword removal
 
-With the help of topic modelling, you will be able to map each ticket onto its respective department/category. You can then use this data to train any supervised model such as logistic regression, decision tree or random forest. Using this trained model, you can classify any new customer complaint support ticket into its relevant department.
+Lemmatization/Stemming
+
+**2. Exploratory Data Analysis (EDA)**
+
+Class distribution analysis
+
+Word frequency analysis
+
+N-gram exploration
+
+Text length distribution
+
+**3. Topic Modeling**
+
+Latent Dirichlet Allocation (LDA) used to identify underlying themes in complaints  
+
+Extracted dominant topics across categories  
+
+Evaluated topic coherence scores  
+
+Used topic distributions to better understand complaint clusters  
+
+**4. Feature Engineering**
+
+Bag of Words (BoW)
+
+TF-IDF Vectorization
+
+(Optional) Word Embeddings
+
+**5. Model Development**
+
+Traditional Machine Learning models (e.g., Logistic Regression, Naive Bayes, SVM)
+
+Model comparison and evaluation
+
+Hyperparameter tuning
+
+**6. Evaluation Metrics**
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
+
+Confusion Matrix
+
+**Results**
+
+The final model demonstrates strong performance in classifying financial complaints across multiple categories. Performance improvements were achieved through preprocessing optimization and feature engineering techniques.
