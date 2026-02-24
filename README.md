@@ -46,9 +46,9 @@ N-gram exploration
 
 Text length distribution
 
-**3. Topic Modeling**
+**3. Topic Modeling using  Non-Negative Matrix Factorization (NMF) on TF-IDF features**
 
-Latent Dirichlet Allocation (LDA) used to identify underlying themes in complaints  
+Identified latent thematic structures
 
 Extracted dominant topics across categories  
 
@@ -58,11 +58,11 @@ Used topic distributions to better understand complaint clusters
 
 **4. Feature Engineering**
 
-Bag of Words (BoW)
+N-gram features
 
 TF-IDF Vectorization
 
-(Optional) Word Embeddings
+Topic distribution vectors as additional features
 
 **5. Model Development**
 
